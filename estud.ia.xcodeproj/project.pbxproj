@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DCA4A9DF2BA857C10085075F /* estud_iaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4A9DE2BA857C10085075F /* estud_iaApp.swift */; };
-		DCA4A9E12BA857C10085075F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4A9E02BA857C10085075F /* ContentView.swift */; };
+		DCA4A9E12BA857C10085075F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4A9E02BA857C10085075F /* HomeView.swift */; };
 		DCA4A9E32BA857C20085075F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA4A9E22BA857C20085075F /* Assets.xcassets */; };
 		DCA4A9E62BA857C20085075F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA4A9E52BA857C20085075F /* Preview Assets.xcassets */; };
+		DCA4A9FC2BA86F8D0085075F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4A9FB2BA86F8D0085075F /* TabBar.swift */; };
+		DCA4AA012BA879F50085075F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4AA002BA879F50085075F /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCA4A9DB2BA857C10085075F /* estud.ia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = estud.ia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA4A9DE2BA857C10085075F /* estud_iaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estud_iaApp.swift; sourceTree = "<group>"; };
-		DCA4A9E02BA857C10085075F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCA4A9E02BA857C10085075F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DCA4A9E22BA857C20085075F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA4A9E52BA857C20085075F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCA4A9FB2BA86F8D0085075F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		DCA4AA002BA879F50085075F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				DCA4A9ED2BA859800085075F /* UI */,
 				DCA4A9EC2BA8596A0085075F /* Common */,
 				DCA4A9DE2BA857C10085075F /* estud_iaApp.swift */,
-				DCA4A9E02BA857C10085075F /* ContentView.swift */,
 				DCA4A9E22BA857C20085075F /* Assets.xcassets */,
 				DCA4A9E42BA857C20085075F /* Preview Content */,
 			);
@@ -91,6 +94,8 @@
 		DCA4A9EE2BA8598F0085075F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DCA4A9FA2BA85FDC0085075F /* HomeModule */,
+				DCA4A9F92BA85FBB0085075F /* LoginModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		DCA4A9F12BA859B90085075F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DCA4AA002BA879F50085075F /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -161,6 +167,22 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DCA4A9F92BA85FBB0085075F /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		DCA4A9FA2BA85FDC0085075F /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				DCA4A9E02BA857C10085075F /* HomeView.swift */,
+				DCA4A9FB2BA86F8D0085075F /* TabBar.swift */,
+			);
+			path = HomeModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA4A9E12BA857C10085075F /* ContentView.swift in Sources */,
+				DCA4A9FC2BA86F8D0085075F /* TabBar.swift in Sources */,
+				DCA4AA012BA879F50085075F /* Colors.swift in Sources */,
+				DCA4A9E12BA857C10085075F /* HomeView.swift in Sources */,
 				DCA4A9DF2BA857C10085075F /* estud_iaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
